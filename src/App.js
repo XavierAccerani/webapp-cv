@@ -5,6 +5,8 @@ import "./App.css";
 // import { Container, Box, Typography } from "@material-ui/core";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CreationCv from "./views/CreationCv";
+import Accueil from "./views/Accueil";
+import CreationLettreMotivation from "./views/CreationLettreMotivation";
 
 function App() {
   const renderCreationCv = () => {
@@ -21,7 +23,18 @@ function App() {
       <div> Stroumpf</div>
       <Router>
         <Routes>
-          <Route path="/CreationCv" element={<CreationCv/>}  >  </Route>
+          <Route path="/" element={<Accueil />}>
+            {" "}
+          </Route>
+          <Route path="/CreationCV" element={<CreationCv />}>
+            {" "}
+          </Route>
+          <Route
+            path="/CreationLettreMotivation"
+            element={<CreationLettreMotivation />}
+          >
+            {" "}
+          </Route>
         </Routes>
       </Router>
     </div>

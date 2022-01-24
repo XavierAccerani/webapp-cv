@@ -5,7 +5,7 @@ const CreationCv = () => {
     console.log("Holaa")
   return (
     <div>
-      <typography> Ah que coucou !!</typography>
+      <typography> Nous allons vous demander quelques informations afin de générer automatiquement votre CV </typography>
     </div>
   );
 };
